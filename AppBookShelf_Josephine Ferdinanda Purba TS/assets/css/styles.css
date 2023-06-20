@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Short Stack', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 16px;
+    background-color: #002B5B;
+    color: #E4DCCF;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    border-radius: 20px;
+    margin: 16px;
+    background: #EA5455;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: #E4DCCF;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2, p{
+    margin-bottom: unset;
+    margin-top: 5px;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+input[type=text], input[type=number] {
+    font-family: 'Short Stack', sans-serif;
+    background: #E4DCCF;
+    border: 5px solid #002B5B;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+
+#bookSubmit{
+    font-family: 'Short Stack', sans-serif;
+    background-color: #002B5B;
+    color: #E4DCCF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    cursor: pointer;
+}
+
+#searchSubmit{
+    font-family: 'Short Stack', sans-serif;
+    background-color: #002B5B;
+    color: #E4DCCF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    cursor: pointer;
+}
+
+
+input[type=text], input[type=number], .btn-submit:focus {
+    outline: none;
+}
+
+
+.check-button {
+    background: url('https://th.bing.com/th/id/R.4f2ab5e6beb4747bb40c8e82bcf0a615?rik=KoevpghHk55lCw&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_203545.png&ehk=NgGrk0eU6g5z8Jn7qn3qAFqq3AsyTu76QS%2b06Br5RWQ%3d&risl=&pid=ImgRaw&r=0');
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background-color: #002B5B;
+    background-size: contain;
+    border-radius: 100px;
+}
+
+.trash-button {
+    background: url('https://th.bing.com/th/id/R.ed1da618beda0e9bec0f12c794551bb0?rik=LUyXYUVJqibg0w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_95550.png&ehk=gMyC4gR4uv7IgzWPvAnf4ek5T3EJxZw3XFStNJ8WeY4%3d&risl=&pid=ImgRaw&r=0');
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background-color: #002B5B;
+    background-size: contain;
+    border-radius: 70px;
+}
+
+.undo-button {
+    background: url('https://cdn1.iconfinder.com/data/icons/web-11/32/undo-512.png');
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background-color: #002B5B;
+    background-size: contain;
+    border-radius: 70px;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+footer {
+    padding: 22px;
+    color: #E4DCCF;
+    background-color: #002B5B;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+ }
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
